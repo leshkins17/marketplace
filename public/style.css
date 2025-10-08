@@ -33,7 +33,9 @@ nav a:active {
   background-color: hsla(0, 0%, 0%, 20%);
 }
 
-header {
+/* HOME STYLES */
+
+#headerHome {
   flex: 1;
   display: flex;
   align-items: center;
@@ -41,11 +43,11 @@ header {
   justify-content: center;
 }
 
-h1 {
+#titleHome {
   font-size: 4rem;
 }
 
-input[type="search"] {
+#searchHome {
   width: 55vh;
   height: 3vh;
   text-align: center;
@@ -53,3 +55,104 @@ input[type="search"] {
   border: 1px solid black;
   border-radius: 10px;
 }
+
+/* MARKET STYLES */
+
+#headerMarket {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#searchMarket {
+  width: 55vh;
+  height: 3vh;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#filter {
+  height: 3vh;
+  width: auto;
+  margin: 0 10px;
+  background-color: hsla(0, 0%, 0%, 0%);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#filter:hover {
+  background-color: hsla(0, 0%, 0%, 10%);
+  cursor: pointer;
+}
+
+#filter:active {
+  background-color: hsla(0, 0%, 0%, 20%);
+}
+
+#mainMarket {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cardImage {
+  width: 100%;
+  height: 200px;
+  background-color: #f3f3f3;
+  background-size: cover;
+  background-position: center;
+}
+
+.cardContent {
+  padding: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem;
+}
+
+.cardPrice {
+  font-size: 1.1rem;
+  color: #2d8f2d;
+  margin: 0 0 1rem;
+}
+
+.card button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: hsla(0, 0%, 0%, 0%);
+  color: black;
+  border: 1px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: hsla(0, 0%, 0%, 10%);
+}
+
+.card button:active {
+  background-color: hsla(0, 0%, 0%, 20%);
+}
+
+/* POST STYLES */
+
+/* ABOUT STYLES */

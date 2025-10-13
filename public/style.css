@@ -36,7 +36,6 @@ nav a:active {
 /* HOME STYLES */
 
 #headerHome {
-  flex: 1;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -54,6 +53,75 @@ nav a:active {
   font-size: 20px;
   border: 1px solid black;
   border-radius: 10px;
+}
+
+#mainHome {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#mainHome button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0 10px;
+  background-color: hsla(0, 0%, 0%, 0%);
+  color: black;
+  border: 1px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#boxes {
+  display: flex;
+  flex-direction: row;
+}
+
+#signinBox,
+#signupBox {
+  display: none;
+  margin: 30px 10px;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+#signinBox.visible,
+#signupBox.visible {
+  display: flex;
+}
+
+#signinBox.visible.show,
+#signupBox.visible.show {
+  opacity: 1;
+}
+
+#signinBox button,
+#signupBox button {
+  display: inline-block;
+  margin: 5px 30px;
+  background-color: hsla(0, 0%, 0%, 0%);
+  color: black;
+  border: 1px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#signinBox input,
+#signinBox button,
+#signupBox input,
+#signupBox button {
+  margin: 10px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: larger;
 }
 
 /* MARKET STYLES */

@@ -18,7 +18,41 @@
       <h1 id="titleHome">Marketplace</h1>
       <input type="search" id="searchHome" />
     </header>
+    <main id="mainHome">
+      <div id="buttonBox">
+        <button onclick="sign('signinBox')">Sign in</button>
+        <button onclick="sign('signupBox')">Sign up</button>
+      </div>
+      <div id="boxes">
+        <div id="signinBox">
+          <form id="signin">
+            <input name="login" placeholder="Login" required />
+            <input
+              name="password"
+              type="password"
+              placeholder="Password"
+              required
+            />
+            <button type="submit">Sign In</button>
+          </form>
+        </div>
+        <div id="signupBox">
+          <form id="signup">
+            <input name="login" placeholder="Login" required />
+            <input name="email" type="email" placeholder="Email" required />
+            <input
+              name="password"
+              type="password"
+              placeholder="Password"
+              required
+            />
+            <button>Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </main>
 
-    <script src="script.js"></script>
+    <script src="authorizationStyle.js"></script>
+    <script src="authorization.js"></script>
   </body>
 </html>

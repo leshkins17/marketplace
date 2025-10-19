@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marketplace</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="./favicon_io/favicon.ico" type="image/x-icon" />
   </head>
   <body>
@@ -18,13 +18,13 @@
       <h1 id="titleHome">Marketplace</h1>
       <input type="search" id="searchHome" />
     </header>
-    <main id="mainHome">
+    <main id="mainHome" class="show">
       <div id="buttonBox">
-        <button onclick="sign('signinBox')">Sign in</button>
-        <button onclick="sign('signupBox')">Sign up</button>
+        <button onclick="boxes('signinBox')">Sign in</button>
+        <button onclick="boxes('signupBox')">Sign up</button>
       </div>
       <div id="boxes">
-        <div id="signinBox">
+        <div id="signinBox" class="hide">
           <form id="signin">
             <input name="login" placeholder="Login" required />
             <input
@@ -36,7 +36,7 @@
             <button type="submit">Sign In</button>
           </form>
         </div>
-        <div id="signupBox">
+        <div id="signupBox" class="hide">
           <form id="signup">
             <input name="login" placeholder="Login" required />
             <input name="email" type="email" placeholder="Email" required />
@@ -46,13 +46,15 @@
               placeholder="Password"
               required
             />
-            <button>Sign Up</button>
+            <button type="submit">Sign Up</button>
           </form>
         </div>
       </div>
     </main>
 
-    <script src="authorizationStyle.js"></script>
-    <script src="authorization.js"></script>
+    <script type="module" src="./mainScripts/script.js"></script>
+    <script type="module" src="./mainScripts/boxes.js"></script>
+    <script type="module" src="./mainScripts/signin.js"></script>
+    <script type="module" src="./mainScripts/signup.js"></script>
   </body>
 </html>

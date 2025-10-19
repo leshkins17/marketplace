@@ -1,12 +1,9 @@
 node_modules/
-logs
-*.log
+.env
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.env
-dist/
-build/
 .DS_Store
 Thumbs.db
-.npm
+dist/
+build/

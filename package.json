@@ -1,6 +1,7 @@
 {
   "name": "project0marketplace",
   "version": "1.0.0",
+  "type": "module",
   "description": "��#\u0000 \u0000m\u0000a\u0000r\u0000k\u0000e\u0000t\u0000p\u0000l\u0000a\u0000c\u0000e\u0000\r\u0000 \u0000",
   "main": "server.js",
   "scripts": {

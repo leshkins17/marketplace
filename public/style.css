@@ -3,6 +3,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 nav {
@@ -61,6 +62,19 @@ nav a:active {
   flex-direction: column;
   justify-content: center;
   margin-top: 100px;
+  transition: opacity 0.3s ease;
+}
+
+#mainHome.show {
+  opacity: 1;
+}
+
+#mainHome:not(.show) {
+  opacity: 0;
+}
+
+#mainHome.hide {
+  display: none;
 }
 
 #mainHome button {
@@ -72,6 +86,7 @@ nav a:active {
   border: 1px solid black;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 15.5px;
 }
 
 #boxes {
@@ -81,20 +96,25 @@ nav a:active {
 
 #signinBox,
 #signupBox {
-  display: none;
+  display: flex;
   margin: 30px 10px;
   opacity: 0;
   transition: all 0.4s ease;
 }
 
-#signinBox.visible,
-#signupBox.visible {
-  display: flex;
+#signinBox.hide,
+#signupBox.hide {
+  display: none;
 }
 
-#signinBox.visible.show,
-#signupBox.visible.show {
+#signinBox.show,
+#signupBox.show {
   opacity: 1;
+}
+
+#signinBox:not(.show),
+#signupBox:not(.show) {
+  opacity: 0;
 }
 
 #signinBox button,
@@ -115,6 +135,13 @@ nav a:active {
   margin: 10px 0;
 }
 
+#signinBox p,
+#signupBox p {
+  margin: -2px 0;
+  font-size: 15px;
+  color: red;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -122,6 +149,25 @@ form {
 
 label {
   font-size: larger;
+}
+
+#logoutBtn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 125px 0;
+  background-color: hsla(0, 0%, 0%, 0%);
+  color: black;
+  border: 1px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#userIcon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 15px;
+  top: 20px;
 }
 
 /* MARKET STYLES */

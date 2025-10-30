@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/home">home</a>
+      <a href="/market">market</a>
+      <a href="/post">post</a>
+      <a href="/about">about</a>
+    </nav>
+
+    <main id="editContainer">
+      <h2>Edit Item</h2>
+      <form id="editForm">
+        <input type="text" name="title" placeholder="Title" required />
+        <textarea
+          name="description"
+          placeholder="Description"
+          required
+        ></textarea>
+        <select name="category" required>
+          <option value="">Category</option>
+          <option value="Automotive">Automotive</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Clothing">Clothing</option>
+          <option value="Furniture">Furniture</option>
+          <option value="Hobby">Hobby</option>
+        </select>
+        <input
+          type="number"
+          name="price"
+          step="0.01"
+          placeholder="Price"
+          required
+        />
+        <select name="condition">
+          <option value="">Condition</option>
+          <option value="New">New</option>
+          <option value="Used Good">Used - Good</option>
+          <option value="Used Poor">Used - Poor</option>
+        </select>
+        <input type="text" name="location" placeholder="Location" />
+        <button type="reset">Reset</button>
+        <button type="submit">Post</button>
+      </form>
+    </main>
+
+    <script type="module" src="./marketScripts/editItem.js"></script>
+  </body>
+</html>

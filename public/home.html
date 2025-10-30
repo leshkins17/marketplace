@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="./favicon_io/favicon.ico" type="image/x-icon" />
   </head>
-  <body>
+  <body id="pageHome">
     <nav>
       <a href="/home">home</a>
       <a href="/market">market</a>
@@ -18,13 +18,13 @@
       <h1 id="titleHome">Marketplace</h1>
       <input type="search" id="searchHome" />
     </header>
-    <main id="mainHome" class="show">
+    <main id="mainHome">
       <div id="buttonBox">
-        <button onclick="boxes('signinBox')">Sign in</button>
-        <button onclick="boxes('signupBox')">Sign up</button>
+        <button id="signinBtn" onclick="boxes('signinBox')">Sign in</button>
+        <button id="signupBtn" onclick="boxes('signupBox')">Sign up</button>
       </div>
       <div id="boxes">
-        <div id="signinBox" class="hide">
+        <div id="signinBox">
           <form id="signin">
             <input name="login" placeholder="Login" required />
             <input
@@ -36,7 +36,7 @@
             <button type="submit">Sign In</button>
           </form>
         </div>
-        <div id="signupBox" class="hide">
+        <div id="signupBox">
           <form id="signup">
             <input name="login" placeholder="Login" required />
             <input name="email" type="email" placeholder="Email" required />
@@ -52,9 +52,9 @@
       </div>
     </main>
 
-    <script type="module" src="./mainScripts/script.js"></script>
-    <script type="module" src="./mainScripts/boxes.js"></script>
-    <script type="module" src="./mainScripts/signin.js"></script>
-    <script type="module" src="./mainScripts/signup.js"></script>
+    <script type="module" src="./homeScripts/script.js"></script>
+    <script type="module" src="./sharedScripts/boxes.js"></script>
+    <script type="module" src="./sharedScripts/signin.js"></script>
+    <script type="module" src="./sharedScripts/signup.js"></script>
   </body>
 </html>

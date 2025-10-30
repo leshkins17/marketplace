@@ -16,82 +16,16 @@
     </nav>
     <header id="headerMarket">
       <select id="filter">
-        <option value="">Automotive</option>
-        <option value="">Computers</option>
-        <option value="">Clothes</option>
-        <option value="">Hobby</option>
+        <option value="">All</option>
+        <option value="Automotive">Automotive</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Clothing">Clothing</option>
+        <option value="Hobby">Hobby</option>
       </select>
       <input type="search" id="searchMarket" />
     </header>
-    <main id="mainMarket">
-      <div class="card">
-        <div
-          class="cardImage"
-          style="background-image: url('./images/car0.jpeg')"
-        ></div>
-        <div class="cardContent">
-          <h3 class="cardTitle">Mazda Cosmo</h3>
-          <p class="cardPrice">$8,000</p>
-          <button>View Details</button>
-        </div>
-      </div>
-      <div class="card">
-        <div
-          class="cardImage"
-          style="background-image: url('./images/computer.jpeg')"
-        ></div>
-        <div class="cardContent">
-          <h3 class="cardTitle">PC</h3>
-          <p class="cardPrice">$3,200</p>
-          <button>View Details</button>
-        </div>
-      </div>
-      <div class="card">
-        <div
-          class="cardImage"
-          style="background-image: url('./images/shirt.jpeg')"
-        ></div>
-        <div class="cardContent">
-          <h3 class="cardTitle">Chanel SS05 Shirt</h3>
-          <p class="cardPrice">$800</p>
-          <button>View Details</button>
-        </div>
-      </div>
-      <div class="card">
-        <div
-          class="cardImage"
-          style="background-image: url('./images/car1.jpeg')"
-        ></div>
-        <div class="cardContent">
-          <h3 class="cardTitle">Toyota Soarer Z20</h3>
-          <p class="cardPrice">$10,800</p>
-          <button>View Details</button>
-        </div>
-      </div>
-      <div class="card">
-        <div
-          class="cardImage"
-          style="background-image: url('./images/mouse.jpeg')"
-        ></div>
-        <div class="cardContent">
-          <h3 class="cardTitle">Mouse Logitech G502</h3>
-          <p class="cardPrice">$50</p>
-          <button>View Details</button>
-        </div>
-      </div>
-      <div class="card">
-        <div
-          class="cardImage"
-          style="background-image: url('./images/ziphoodie.jpeg')"
-        ></div>
-        <div class="cardContent">
-          <h3 class="cardTitle">Zip Hoodie Chinese</h3>
-          <p class="cardPrice">$270</p>
-          <button>View Details</button>
-        </div>
-      </div>
-    </main>
+    <main id="mainMarket"></main>
 
-    <script src="script.js"></script>
+    <script type="module" src="./marketScripts/market.js"></script>
   </body>
 </html>

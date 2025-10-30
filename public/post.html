@@ -7,18 +7,99 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./favicon_io/favicon.ico" type="image/x-icon" />
   </head>
-  <body>
+  <body id="pagePost">
     <nav>
       <a href="/home">home</a>
       <a href="/market">market</a>
       <a href="/post">post</a>
       <a href="/about">about</a>
     </nav>
-    <header id="headerHome">
-      <h1 id="titleHome">Post</h1>
-      <input type="search" id="searchHome" />
+    <header id="headerPost">
+      <h1 id="titlePost">Post</h1>
     </header>
+    <main id="mainPost">
+      <p id="communicator">You need to sign in first</p>
+      <div id="buttonBox">
+        <button id="signinBtn" onclick="boxes('signinBox')">Sign in</button>
+        <button id="signupBtn" onclick="boxes('signupBox')">Sign up</button>
+      </div>
+      <div id="boxes">
+        <div id="signinBox">
+          <form id="signin">
+            <input name="login" placeholder="Login" required />
+            <input
+              name="password"
+              type="password"
+              placeholder="Password"
+              required
+            />
+            <button type="submit">Sign In</button>
+          </form>
+        </div>
+        <div id="signupBox">
+          <form id="signup">
+            <input name="login" placeholder="Login" required />
+            <input name="email" type="email" placeholder="Email" required />
+            <input
+              name="password"
+              type="password"
+              placeholder="Password"
+              required
+            />
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+        <div id="postBox">
+          <form id="post">
+            <input type="text" name="title" placeholder="Title" required />
+            <textarea
+              name="description"
+              placeholder="Description"
+              required
+            ></textarea>
+            <select name="category" required>
+              <option value="">Category</option>
+              <option value="Automotive">Automotive</option>
+              <option value="Electronics">Electronics</option>
+              <option value="Clothing">Clothing</option>
+              <option value="Furniture">Furniture</option>
+              <option value="Hobby">Hobby</option>
+            </select>
+            <input
+              type="number"
+              name="price"
+              step="0.01"
+              placeholder="Price"
+              required
+            />
+            <select name="condition">
+              <option value="">Condition</option>
+              <option value="New">New</option>
+              <option value="Used Good">Used - Good</option>
+              <option value="Used Poor">Used - Poor</option>
+            </select>
+            <input type="text" name="location" placeholder="Location" />
+            <input
+              type="file"
+              name="images"
+              id="images"
+              multiple
+              accept="image/*"
+            />
+            <p id="imagesLabel">Images</p>
+            <div id="preview"></div>
+            <button type="reset">Reset</button>
+            <button type="submit">Post</button>
+          </form>
+        </div>
+      </div>
+    </main>
 
-    <script src="script.js"></script>
+    <script type="module" src="./postScripts/script.js"></script>
+    <script type="module" src="./postScripts/previewImage.js"></script>
+    <script type="module" src="./postScripts/postItem.js"></script>
+    <script type="module" src="./sharedScripts/boxes.js"></script>
+    <script type="module" src="./sharedScripts/signin.js"></script>
+    <script type="module" src="./sharedScripts/signup.js"></script>
   </body>
 </html>

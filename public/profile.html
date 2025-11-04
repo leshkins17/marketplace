@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketplace - Profile</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./favicon_io/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <button id="menuToggle" aria-label="Open menu">☰</button>
+
+    <nav>
+      <a href="/home">home</a>
+      <a href="/market">market</a>
+      <a href="/post">post</a>
+      <a href="/about">about</a>
+    </nav>
+
+    <main id="mainProfile">
+      <div id="profileIcon"></div>
+      <h1>My Profile</h1>
+      <div id="userData"></div>
+
+      <h2>Cart</h2>
+      <div id="cart"></div>
+
+      <h2 id="purchasedTitle">Purchased Items</h2>
+      <div id="purchased"></div>
+
+      <h2>Balance</h2>
+      <div id="balanceSection">
+        <span id="balance"></span>
+        <input type="number" id="addMoneyAmount" placeholder="Enter amount" />
+        <button id="addMoneyBtn">Add Money</button>
+      </div>
+
+      <h2>Edit Profile</h2>
+      <form id="editProfileForm" enctype="multipart/form-data">
+        <input type="text" id="login" name="login" placeholder="Login" />
+        <input type="email" id="email" name="email" placeholder="Email" />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+        />
+        <input type="file" id="avatar" name="avatar" accept="image/*" />
+        <button type="submit">Save</button>
+      </form>
+
+      <button id="deleteAccountBtn">Delete Account</button>
+    </main>
+
+    <script type="module" src="./js/profileScripts/script.js"></script>
+  </body>
+</html>

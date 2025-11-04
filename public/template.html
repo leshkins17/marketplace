@@ -3,33 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Item</title>
+    <title>Marketplace - Item</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./favicon_io/favicon.ico" type="image/x-icon" />
   </head>
-  <body>
+  <body id="bodyItem">
+    <button id="menuToggle" aria-label="Open menu">☰</button>
+
     <nav>
       <a href="/home">home</a>
       <a href="/market">market</a>
       <a href="/post">post</a>
       <a href="/about">about</a>
     </nav>
-    <main id="itemPage">
-      <section id="itemImages"></section>
+    <main id="mainItem">
+      <section id="imagesItem"></section>
 
-      <section id="itemDetails">
-        <h1 id="itemTitle">Loading...</h1>
-        <p id="itemCondition"></p>
-        <p id="itemLocation"></p>
-        <p id="itemDescription"></p>
+      <section id="detailsItem">
+        <h1 id="titleItem">Loading...</h1>
+        <p id="conditionItem"></p>
+        <p id="locationItem"></p>
+        <p id="descriptionItem"></p>
       </section>
 
       <aside id="buySection">
-        <h2 id="itemPrice">$0.00</h2>
-        <button id="buyButton">Buy Now</button>
-        <button id="addToCart">Add to Cart</button>
+        <h2 id="priceItem">$0.00</h2>
+        <button id="buyBtn">Buy Now</button>
+        <button id="cartBtn">Add to Cart</button>
       </aside>
     </main>
 
-    <script type="module" src="./templateScripts/templateScript.js"></script>
+    <script type="module" src="./js/templateScripts/script.js"></script>
   </body>
 </html>

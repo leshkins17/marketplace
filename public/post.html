@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marketplace</title>
+    <title>Marketplace - Post</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./favicon_io/favicon.ico" type="image/x-icon" />
   </head>
   <body id="pagePost">
+          <button id="menuToggle" aria-label="Open menu">☰</button>
     <nav>
       <a href="/home">home</a>
       <a href="/market">market</a>
@@ -18,14 +19,15 @@
       <h1 id="titlePost">Post</h1>
     </header>
     <main id="mainPost">
+
       <p id="communicator">You need to sign in first</p>
-      <div id="buttonBox">
-        <button id="signinBtn" onclick="boxes('signinBox')">Sign in</button>
-        <button id="signupBtn" onclick="boxes('signupBox')">Sign up</button>
+      <div id="btnBox">
+        <button id="loginBtn">Log in</button>
+        <button id="signupBtn">Signup</button>
       </div>
       <div id="boxes">
-        <div id="signinBox">
-          <form id="signin">
+        <div id="loginBox">
+          <form id="loginForm">
             <input name="login" placeholder="Login" required />
             <input
               name="password"
@@ -33,11 +35,11 @@
               placeholder="Password"
               required
             />
-            <button type="submit">Sign In</button>
+            <button type="submit">Log In</button>
           </form>
         </div>
         <div id="signupBox">
-          <form id="signup">
+          <form id="signupForm">
             <input name="login" placeholder="Login" required />
             <input name="email" type="email" placeholder="Email" required />
             <input
@@ -50,7 +52,7 @@
           </form>
         </div>
         <div id="postBox">
-          <form id="post">
+          <form id="postForm">
             <input type="text" name="title" placeholder="Title" required />
             <textarea
               name="description"
@@ -95,11 +97,6 @@
       </div>
     </main>
 
-    <script type="module" src="./postScripts/script.js"></script>
-    <script type="module" src="./postScripts/previewImage.js"></script>
-    <script type="module" src="./postScripts/postItem.js"></script>
-    <script type="module" src="./sharedScripts/boxes.js"></script>
-    <script type="module" src="./sharedScripts/signin.js"></script>
-    <script type="module" src="./sharedScripts/signup.js"></script>
+    <script type="module" src="./js/postScripts/script.js"></script>
   </body>
 </html>
